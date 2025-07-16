@@ -21,4 +21,4 @@ const caesar = (string, shift) => {
     }
 }
 
-console.log(caesar("Test 123", 4))
+console.log(caesar("Hello!", 3))

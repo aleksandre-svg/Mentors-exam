@@ -9,4 +9,4 @@ const numSum = (arg1) => {
     return sum
 }
 
-console.log(numSum("1a2b3c"))
+console.log(numSum("100 200"))
