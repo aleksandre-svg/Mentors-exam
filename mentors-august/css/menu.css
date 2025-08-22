@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+}
+.header .header-nav .header-nav-ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.header .header-nav .header-nav-ul li {
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+}
+
+#shopcart {
+    width: 30px;
+    cursor: pointer;
+}
+.dish {
+    color: #fff;
+    height: 250px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+button {
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: coral;
+    color: #fff;
+    cursor: pointer;
+}
+
+#dishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimmax(200px, 1fr));
+    gap: 20px;
+}
+
+.dish:nth-child(1){
+    background-color: rgb(197, 171, 103);
+}
+
+.dish:nth-child(2){
+    background-color: rgb(233, 237, 119);
+}
+
+.dish:nth-child(3){
+    background-color: rgb(237, 176, 76);
+}
+
+.dish:nth-child(4){
+    background-color: rgb(209, 226, 122);
+}
+
+.dish:nth-child(5){
+    background-color: rgb(132, 129, 66);
+}
+
+.features h1 {
+    margin-left: 150px;
+}
+
+.features {
+    margin-top: 100px;
+}
+#burger {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    align-items: center;
+    gap: 100px;
+    transform: translate(-300px);
+    transition: 1s;
+}
+
+#burger button {
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: coral;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 440px){
+    .features h1 {
+        margin-left: 75px;
+    }
+
+    .dishes {
+        gap: 15px;
+    }
+
+    .header nav {
+        display: none;
+    }
+}

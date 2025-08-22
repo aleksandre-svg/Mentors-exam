@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Wall</title>
+    <link rel="stylesheet" href="hw1.css">
+</head>
+<body>
+    <div id="modes">
+        <img src="moon.jpg" alt="" class="mode" id="moon">
+        <img src="sun.png" alt="" class="mode" id="sun">
+    </div>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <input type="search" placeholder="Search" />
+        <div class="menu-section">
+            <h3>TASKS</h3>
+            <ul>
+                <li><a href="hw1.1.html" style="text-decoration: none; color: #000;">📌 Completed</a></li>
+                <li>📅 Today</li>
+                <li>🗓️ Calendar</li>
+                <li><strong>🧱 Sticky Wall</strong></li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h3>LISTS</h3>
+            <ul>
+                <li>🟠 Personal</li>
+                <li>🟢 Work</li>
+                <li>🟤 List 1</li>
+                <li>➕ Add New List</li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h3>TAGS</h3>
+            <ul>
+                <li><span style="background:#d4f1f9; padding:4px 8px; border-radius:5px;">Tag 1</span></li>
+                <li><span style="background:#fddede; padding:4px 8px; border-radius:5px;">Tag 2</span></li>
+                <li><span style="background:#eee; padding:4px 8px; border-radius:5px;">+ Add Tag</span></li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <ul>
+                <li>⚙️ Settings</li>
+                <li>🔓 Sign out</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <h1>Sticky Wall</h1>
+        <div class="sticky-grid">
+            <div class="note gray" style="order: 1;">+</div>
+        </div>
+    </div>
+    <form id="item-add">
+        <img src="close.png" id="close">
+        <h1>Add new item</h1>
+        <label for="title">Title</label><br>
+        <input type="text" placeholder="Title" id="title" name="title" required><br><br>
+        <label for="sum">Summary</label><br>
+        <textarea id="sum" style="max-width: 245px; max-height: 145px;" name="summary" required></textarea>
+        <ul id="colors" name="color">
+            <li class="yellow color-div" name="nigger"></li>
+            <li class="blue color-div"></li>
+            <li class="red color-div"></li>
+            <li class="orange color-div"></li>
+        </ul><br>
+        <button type="submit" id="submit">Add item</button>
+    </form>
+    <div id="blur"></div>
+    <div id="edit">
+        <img src="close.png" style="position: absolute; right: 0; top: 0; cursor: pointer;" id="edit-close">
+        <ul id="colors" name="color">
+            <li class="yellow edit-color-div" name="nigger"></li>
+            <li class="blue edit-color-div"></li>
+            <li class="red edit-color-div"></li>
+            <li class="orange edit-color-div"></li>
+        </ul><br>
+    </div>
+    <script src="hw1.js"></script>
+</body>
+</html>

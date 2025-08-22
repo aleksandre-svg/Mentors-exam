@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+}
+.header .header-nav .header-nav-ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.header .header-nav .header-nav-ul li {
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+}
+
+#shopcart {
+    width: 30px;
+    cursor: pointer;
+}
+
+#main {
+    width: 100%;
+    height: 500px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#burger {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    align-items: center;
+    gap: 100px;
+    transform: translate(-300px);
+    transition: 1s;
+}
+#burger button {
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: coral;
+    color: #fff;
+    cursor: pointer;
+}
+input {
+    width: 300px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: cornsilk;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: chartreuse;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+textarea {
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 150px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#succes img {
+    width: 100px;
+}
+
+div {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#succes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    display: none;
+}
+
+@media (max-width: 504px){
+    div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 440px){
+    .features h1 {
+        margin-left: 75px;
+    }
+
+    .dishes {
+        gap: 15px;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    #main {
+        width: 100%;
+    }
+}

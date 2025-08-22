@@ -130,7 +130,7 @@ searchForm.addEventListener("submit", (e)=>{
     e.preventDefault()
     let input = e.target.search.value
     for (let i of childElements){
-        if(i.querySelector("p").textContent.toLowerCase().startsWith(value)){
+        if(i.querySelector("p").textContent.toLowerCase().startsWith(input)){
             i.style.display = "flex"
         }else {
             i.style.display = "none"
